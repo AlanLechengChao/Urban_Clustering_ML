@@ -340,20 +340,20 @@ class Spider:
         # 保存数据
         self.save_csv()
 
-if __name__ == '__main__':
-    start = time.time()
-    start_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(start))  # 转化格式
+# if __name__ == '__main__':
+#     start = time.time()
+#     start_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(start))  # 转化格式
 
-    s = Spider()
-    s.run()
+#     s = Spider()
+#     s.run()
 
-    finish = time.time()
-    finish_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(finish))  # 转化格式
-    Total_time = finish - start
-    m, s = divmod(Total_time, 60)
-    h, m = divmod(m, 60)
-    print('开始时间:', start_time)
-    print('结束时间:', finish_time)
-    print("Total_time", "共耗时===>%d时:%02d分:%02d秒" % (h, m, s))
+#     finish = time.time()
+#     finish_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(finish))  # 转化格式
+#     Total_time = finish - start
+#     m, s = divmod(Total_time, 60)
+#     h, m = divmod(m, 60)
+#     print('开始时间:', start_time)
+#     print('结束时间:', finish_time)
+#     print("Total_time", "共耗时===>%d时:%02d分:%02d秒" % (h, m, s))
 
 
