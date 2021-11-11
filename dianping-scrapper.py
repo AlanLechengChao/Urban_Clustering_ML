@@ -16,6 +16,8 @@ import pandas as pd
 # 每页15个，实际店铺要少，缺少广告推广店铺
 # 会封ip,账号，放慢采集速度
 
+USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:88.0) Gecko/20100101 Firefox/88.0'
+
 
 class Spider:
     def __init__(self):
@@ -51,7 +53,7 @@ class Spider:
             'Host': 'www.dianping.com',
             # 'Referer': 'http://www.dianping.com/beijing/ch10/r2578',
             'Upgrade-Insecure-Requests': '1',
-            'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36'
+            'User-Agent': USER_AGENT
         }
 
     def get_cookies(self):
@@ -278,6 +280,7 @@ class Spider:
         types = {}
         d = parsel.Selector(text=res.text)
         lis = d.xpath('.//div[@class="nav-category J_filter_channel"]//div[@class="nc-items"]/a')
+        lis = lis[:10]
         for li in lis:
             name = li.xpath('.//span/text()').extract_first()
             href = li.xpath('.//@href').extract_first()
@@ -294,8 +297,9 @@ class Spider:
         """
         areas = {}
         d = parsel.Selector(text=res.text)
-        lis = d.xpath('.//div[@id="J_nt_items"]/div[@id="bussi-nav"]/a')  # 热门商区
-        # lis = d.xpath('.//div[@id="J_nt_items"]/div[@id="region-nav"]/a')  # 行政区
+        # lis = d.xpath('.//div[@id="J_nt_items"]/div[@id="bussi-nav"]/a')  # 热门商区
+        lis = d.xpath('.//div[@id="J_nt_items"]/div[@id="region-nav"]/a')  # 行政区
+        lis = lis[:-1]
         # lis = d.xpath('.//div[@id="J_nt_items"]/div[@id="metro-nav"]/a')  # 地铁线
         for li in lis:
             name = li.xpath('.//span/text()').extract_first()
@@ -321,6 +325,7 @@ class Spider:
             areas = self.get_areas(res)
             for type_name, type in types.items():
                 for area_name, area in areas.items():
+                    time.sleep(0.8)
                     dic = {
                         '省份': pro_name,
                         '城市': pro_name,
