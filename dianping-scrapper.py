@@ -16,7 +16,7 @@ import pandas as pd
 # 每页15个，实际店铺要少，缺少广告推广店铺
 # 会封ip,账号，放慢采集速度
 
-USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:88.0) Gecko/20100101 Firefox/88.0'
+USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36'
 
 
 class Spider:
@@ -71,6 +71,7 @@ class Spider:
             try:
                 time.sleep(random.uniform(3, 5))
                 response = requests.request("GET", url, headers=self.headers, timeout=(5, 10), verify=False)
+                print(response, response.status_code)
                 # print(response.content.decode('utf-8'))
                 # 抱歉！页面无法访问
                 if re.findall('页面不存在', response.content.decode('utf-8'), re.S):
@@ -336,7 +337,6 @@ class Spider:
                     url = base_url.format(pro_code, type[0], area[0])
                     print('正在下载url:  {}'.format(url))
                     self.get_pages(url)
-                    return
 
     def run(self):
         url = "https://www.dianping.com/shanghai/ch0"  # 目标URL
