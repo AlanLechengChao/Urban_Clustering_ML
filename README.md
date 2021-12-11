@@ -22,7 +22,7 @@ NYU Shanghai CSCI-SHU 360 Machine Learning project: by Alan, Ella and Steven.
 * [normalized_fishnet_town.csv](normalized_fishnet_town.csv): Early try of normalizing fishnet density
 * [norm_f_town_district.csv](norm_f_town_district.csv): Finalized normalization data for training
 ### Plots
-* POI data, without normalization
+* POI data, without normalization       
 ![POI data, without normalization](plots/poi_weight.png)
 * POI data, normalized at district level
 ![POI data, normalized at district level](plots/norm_poi_district.png)
