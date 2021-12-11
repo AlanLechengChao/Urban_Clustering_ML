@@ -54,19 +54,19 @@ NYU Shanghai CSCI-SHU 360 Machine Learning project: by Alan, Ella and Steven.
 
 ### 2. Fishnet level, classification models
 
-* Ground truth
+* Ground truth                              
 ![gt](plots/ground_truth_label.png)
 
-* K Nearest Neighbor
+* K Nearest Neighbor                        
 ![knn](plots/KNN.png)
 
-* Adaboost
+* Adaboost                          
 ![knn](plots/adaboost.png)
 
-* Decision Tree
+* Decision Tree                         
 ![dt](plots/decision_tree.png)
 
-* Random Forest
+* Random Forest                             
 ![rf](plots/randomforest.png)
 
 ### 3. Fishnet level, clustering, without normalize
@@ -82,13 +82,13 @@ NYU Shanghai CSCI-SHU 360 Machine Learning project: by Alan, Ella and Steven.
 
 ### 4. Fishnet level, clustering, with normalized data.
 
-* K means: having k = 7                   
+* K means: having k = 7                                
 ![kmeans 6 normalized](plots/km7_normalized.png)
 
-* Gaussian Mixture: having k = 7          
+* Gaussian Mixture: having k = 7                     
 ![kmeans 6 normalized](plots/gm7_normalized.png)
 
-* DBSCAN                                            
+* DBSCAN                                             
 ![dbscan](plots/dbscan_normalized.png)
 ![dbscan1](plots/dbscan_normalized_1.png)
 
