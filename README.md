@@ -20,7 +20,26 @@ NYU Shanghai CSCI-SHU 360 Machine Learning project: by Alan, Ella and Steven.
 * [housing_kriging.xlsx](housing_kriging.xlsx): Housing data fishnet, with Kriging interpol.
 ### Fishnet normalized
 * [normalized_fishnet_town.csv](normalized_fishnet_town.csv): Early try of normalizing fishnet density
-* [norm_f_town_district.csv](norm_f_town_district.csv): Finalized normalization data for training
+* [norm_f_town_district.csv](norm_f_town_district.csv): normalized data.
+
+* [POI_Fishnet_for_training.csv](POI_Fishnet_for_training.csv): Training dataset that consists of 3 columns.
+
+|k_index|POI_normalize|commercial_price|Ground_truth_label|housing_price        |
+|-------|-------------|----------------|------------------|---------------------|
+|1846|-0.456332229|-0.232740344|2  |2.2294739887415953   |
+|1847|-0.446541948|-0.03508537|2  |1.1101016907979073   |
+|1848|-0.285135448|-0.020974646|2  |1.157380772499592    |
+|1849|0.51669039  |-0.092973206|2  |0.02686459639227951  |
+|1850|0.782230116 |-0.171101576|2  |0.02686459639227951  |
+|1851|-0.181002222|0.274272878|2  |0.02686459639227951  |
+|1852|-0.25389548 |0.494809612|2  |1.157380772499592    |
+|1853|0.084537503 |0          |2  |1.8267865167539685   |
+|1854|0.027264229 |0.50115112 |2  |0.16032218247970148  |
+|1855|-0.358028706|-0.225356818|2  |0.16032218247970148  |
+|1856|-0.37364869 |-0.567579648|2  |0.4922316729195175   |
+|1857|-0.045629029|0          |2  |1.2664371518217568   |
+
+
 ### Plots
 * POI data, without normalization       
 ![POI data, without normalization](plots/poi_weight.png)
