@@ -52,31 +52,7 @@ NYU Shanghai CSCI-SHU 360 Machine Learning project: by Alan, Ella and Steven.
 * Gaussian Mixture: having k = 6. 
 ![kmeans 6 town](plots/town_gm6.png)
 
-
-### 2. Fishnet level, clustering, without normalize
-* K means: having k = 6                   
-![kmeans 6 fishnet](plots/km6_fishnet.png)
-
-* Gaussian Mixture: having k = 6          
-![kmeans 6 fishnet](plots/gm6_fishnet.png)
-
-* DBSCAN                                            
-![dbscan_fishnet_eps0.2_min2](plots/dbscan_fishnet_eps0.2_min2.png)
-![dbscan_fishnet_eps1_min10.png](plots/dbscan_fishnet_eps1_min10.png)
-
-### 3. Fishnet level, clustering, with normalized data.
-
-* K means: having k = 7                   
-![kmeans 6 normalized](plots/km7_normalized.png)
-
-* Gaussian Mixture: having k = 7          
-![kmeans 6 normalized](plots/gm7_normalized.png)
-
-* DBSCAN                                            
-![dbscan](plots/dbscan_normalized.png)
-![dbscan1](plots/dbscan_normalized_1.png)
-
-### 4. Fishnet level, classification models
+### 2. Fishnet level, classification models
 
 * Ground truth
 ![gt](plots/ground_truth_label.png)
@@ -92,3 +68,27 @@ NYU Shanghai CSCI-SHU 360 Machine Learning project: by Alan, Ella and Steven.
 
 * Random Forest
 ![rf](plots/randomforest.png)
+
+### 3. Fishnet level, clustering, without normalize
+* K means: having k = 6                   
+![kmeans 6 fishnet](plots/km6_fishnet.png)
+
+* Gaussian Mixture: having k = 6          
+![kmeans 6 fishnet](plots/gm6_fishnet.png)
+
+* DBSCAN                                            
+![dbscan_fishnet_eps0.2_min2](plots/dbscan_fishnet_eps0.2_min2.png)
+![dbscan_fishnet_eps1_min10.png](plots/dbscan_fishnet_eps1_min10.png)
+
+### 4. Fishnet level, clustering, with normalized data.
+
+* K means: having k = 7                   
+![kmeans 6 normalized](plots/km7_normalized.png)
+
+* Gaussian Mixture: having k = 7          
+![kmeans 6 normalized](plots/gm7_normalized.png)
+
+* DBSCAN                                            
+![dbscan](plots/dbscan_normalized.png)
+![dbscan1](plots/dbscan_normalized_1.png)
+
