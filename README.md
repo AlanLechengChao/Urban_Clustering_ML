@@ -45,22 +45,22 @@ NYU Shanghai CSCI-SHU 360 Machine Learning project: by Alan, Ella and Steven.
 
 ## Training Models
 ### 1. Town level, clustering, without normalize
-* K-means: having k = 6 and k = 10.
+* K-means: having k = 6 and k = 10.         
 ![kmeans 6 town](plots/town_km6.png)
 ![kmeans 10 town](plots/town_km10.png)
 
-* Gaussian Mixture: having k = 6 and k = 10.
+* Gaussian Mixture: having k = 6 and k = 10. 
 ![kmeans 6 town](plots/town_gm6.png)
 ![kmeans 10 town](plots/town_gm10.png)
 
 ### 2. Fishnet level, clustering, without normalize
-* K means: having k = 6
+* K means: having k = 6                   
 ![kmeans 6 fishnet](plots/km6_fishnet.png)
 
-* Gaussian Mixture: having k = 6
+* Gaussian Mixture: having k = 6          
 ![kmeans 6 fishnet](plots/gm6_fishnet.png)
 
-* DBSCAN
+* DBSCAN                                            
 ![dbscan_fishnet_eps0.2_min2](plots/dbscan_fishnet_eps0.2_min2.png)
 
 ### 3. Fishnet level, clustering, with normalized data.
