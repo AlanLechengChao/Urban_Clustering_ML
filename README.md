@@ -45,13 +45,13 @@ NYU Shanghai CSCI-SHU 360 Machine Learning project: by Alan, Ella and Steven.
 
 ## Training Models
 ### 1. Town level, clustering, without normalize
-* K-means: having k = 6 and k = 10.         
+* K-means: having k = 6.         
 ![kmeans 6 town](plots/town_km6.png)
-![kmeans 10 town](plots/town_km10.png)
 
-* Gaussian Mixture: having k = 6 and k = 10. 
+
+* Gaussian Mixture: having k = 6. 
 ![kmeans 6 town](plots/town_gm6.png)
-![kmeans 10 town](plots/town_gm10.png)
+
 
 ### 2. Fishnet level, clustering, without normalize
 * K means: having k = 6                   
@@ -65,3 +65,30 @@ NYU Shanghai CSCI-SHU 360 Machine Learning project: by Alan, Ella and Steven.
 ![dbscan_fishnet_eps1_min10.png](plots/dbscan_fishnet_eps1_min10.png)
 
 ### 3. Fishnet level, clustering, with normalized data.
+
+* K means: having k = 7                   
+![kmeans 6 normalized](plots/km7_normalized.png)
+
+* Gaussian Mixture: having k = 7          
+![kmeans 6 normalized](plots/gm7_normalized.png)
+
+* DBSCAN                                            
+![dbscan](plots/dbscan_normalized.png)
+![dbscan1](plots/dbscan_normalized_1.png)
+
+### 4. Fishnet level, classification models
+
+* Ground truth
+![gt](plots/ground_truth_label.png)
+
+* K Nearest Neighbor
+![knn](plots/KNN.png)
+
+* Adaboost
+![knn](plots/adaboost.png)
+
+* Decision Tree
+![dt](plots/decision_tree.png)
+
+* Random Forest
+![rf](plots/randomforest.png)
