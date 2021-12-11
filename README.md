@@ -20,7 +20,20 @@ NYU Shanghai CSCI-SHU 360 Machine Learning project: by Alan, Ella and Steven.
 * [housing_kriging.xlsx](housing_kriging.xlsx): Housing data fishnet, with Kriging interpol.
 ### Fishnet normalized
 * [normalized_fishnet_town.csv](normalized_fishnet_town.csv): Early try of normalizing fishnet density
-* [norm_f_town_district.csv](norm_f_town_district.csv): Finalized normalization data
+* [norm_f_town_district.csv](norm_f_town_district.csv): Finalized normalization data for training
+### Plots
+* POI data, without normalization
+![POI data, without normalization](plots/poi_weight.png)
+* POI data, normalized at district level
+![POI data, normalized at district level](plots/norm_poi_district.png)
+* POI data, normalized at district level
+![POI data, normalized at town level](plots/norm_poi_town.png)
+* Housing data, without normalize
+![Housing data, without normalize](plots/without_house.png)
+* Housing data, normalized at district level
+![Housing data, normalized at district level](plots/norm_house_district.png)
+* Housing data, normalized at town level
+![Housing data, normalized at town level](plots/norm_house_town.png)
 ## Code
 * [dianping-scrapper.py](dianping-scrapper.py): 点评scrapping code.
 * [alt.py](alt.py): same as above.
