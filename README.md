@@ -26,7 +26,7 @@ NYU Shanghai CSCI-SHU 360 Machine Learning project: by Alan, Ella and Steven.
 ![POI data, without normalization](plots/poi_weight.png)
 * POI data, normalized at district level
 ![POI data, normalized at district level](plots/norm_poi_district.png)
-* POI data, normalized at district level
+* POI data, normalized at town level
 ![POI data, normalized at town level](plots/norm_poi_town.png)
 * Housing data, without normalization       
 ![Housing data, without normalize](plots/without_house.png)
