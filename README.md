@@ -62,5 +62,6 @@ NYU Shanghai CSCI-SHU 360 Machine Learning project: by Alan, Ella and Steven.
 
 * DBSCAN                                            
 ![dbscan_fishnet_eps0.2_min2](plots/dbscan_fishnet_eps0.2_min2.png)
+![dbscan_fishnet_eps1_min10.png](plots/dbscan_fishnet_eps1_min10.png)
 
 ### 3. Fishnet level, clustering, with normalized data.
