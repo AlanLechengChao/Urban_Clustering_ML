@@ -28,7 +28,7 @@ NYU Shanghai CSCI-SHU 360 Machine Learning project: by Alan, Ella and Steven.
 ![POI data, normalized at district level](plots/norm_poi_district.png)
 * POI data, normalized at district level
 ![POI data, normalized at town level](plots/norm_poi_town.png)
-* Housing data, without normalize
+* Housing data, without normalization       
 ![Housing data, without normalize](plots/without_house.png)
 * Housing data, normalized at district level
 ![Housing data, normalized at district level](plots/norm_house_district.png)
@@ -42,3 +42,25 @@ NYU Shanghai CSCI-SHU 360 Machine Learning project: by Alan, Ella and Steven.
 * [poi_dp_house_pop_fish.ipynb](poi_dp_house_pop_fish.ipynb): Training code. Fishnet level, clustering.
 * [poi_density_housing_normalize.ipynb](poi_density_housing_normalize.ipynb): Data processing code. Normalizing fishnet data. 
 * [Density_POI.ipynb](Density_POI.ipynb): Pure POI data visualization. 
+
+## Training Models
+### 1. Town level, clustering, without normalize
+* K-means: having k = 6 and k = 10.
+![kmeans 6 town](plots/town_km6.png)
+![kmeans 10 town](plots/town_km10.png)
+
+* Gaussian Mixture: having k = 6 and k = 10.
+![kmeans 6 town](plots/town_gm6.png)
+![kmeans 10 town](plots/town_gm10.png)
+
+### 2. Fishnet level, clustering, without normalize
+* K means: having k = 6
+![kmeans 6 fishnet](plots/km6_fishnet.png)
+
+* Gaussian Mixture: having k = 6
+![kmeans 6 fishnet](plots/gm6_fishnet.png)
+
+* DBSCAN
+![dbscan_fishnet_eps0.2_min2](plots/dbscan_fishnet_eps0.2_min2.png)
+
+### 3. Fishnet level, clustering, with normalized data.
